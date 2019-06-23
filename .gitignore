@@ -1,4 +1,4 @@
-schedule/__pychache__/
+schedule/__pycache__/
 
 schedule/__init__.py
 
@@ -6,3 +6,4 @@ IMGSched_project/credentials.py
 
 IMGSched_project/__init__.py
 
+IMGSched_project/__pycache__/
