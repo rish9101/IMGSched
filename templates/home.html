@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% if user.is_authenticated %}
+		<p class='display-4'>Hello, {{ user.email }}</p>
+		<p> You are {{ backend.associated }}</p>
+		<p> also {{ user.is_authenticated }}</p>
+		<a  href= "{% url 'logout' %}"> Logout </a>
+
+	{% else %}
+		<a class="lead" href="{% url 'login' %}"> Login </a>
+		<p> {{ user.is_authenticated }} </p>
+	{% endif %}
+{% endblock content %}
